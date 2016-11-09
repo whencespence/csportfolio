@@ -62,7 +62,7 @@ function hackeryou_scripts() {
 
 	//Don't use WordPress' local copy of jquery, load our own version from a CDN instead
 	wp_deregister_script('jquery');
-  wp_enqueue_script(
+	wp_enqueue_script(
   	'jquery',
   	"http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js",
   	false, //dependencies
@@ -88,7 +88,6 @@ function hackeryou_scripts() {
 }
 
 add_action( 'wp_enqueue_scripts', 'hackeryou_scripts');
-
 
 /* Custom Title Tags */
 

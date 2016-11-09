@@ -24,25 +24,22 @@ img {
 }
 
 body {
-	color: #333;
-}
-
-.container {
-	max-width: 1200px;
+	max-width: 1050px;
+	font-family: 'roboto', 'helvetica', sans-serif;
 	margin: 0 auto;
 }
+// .content {
+// 	float: left;
+// 	width: 65%;
+// 	margin-right: 5%;
+// }
 
-.content {
-	float: left;
-	width: 65%;
-	margin-right: 5%;
+// .full {
+// 	width: 100%;
+// }
+header h1{
+	width: 55%;
 }
-
-.full {
-	width: 100%;
-}
-
-
 
 
 
