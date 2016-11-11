@@ -13,32 +13,34 @@
 @import 'sidebar';
 @import 'comments';
 @import 'footer';
+@import 'about';
+@import 'work';
+@import 'contact';
 /*
 ====================================
-Default Styling
+Default Styli
 ====================================
 */
 
 img {
 	max-width: 100%;
 }
-
 body {
-	max-width: 1050px;
+	max-width: 1280px;
+	width: 100%;
+	background-color: #FAFAFA;
 	font-family: 'roboto', 'helvetica', sans-serif;
+}
+.wrapper{
+	max-width: 1150px;
+	width: 90%;
 	margin: 0 auto;
 }
-// .content {
-// 	float: left;
-// 	width: 65%;
-// 	margin-right: 5%;
-// }
-
-// .full {
-// 	width: 100%;
-// }
-header h1{
-	width: 55%;
+.flex_container{
+	display: flex;
+}
+section{
+	margin: 8% 0;
 }
 
 

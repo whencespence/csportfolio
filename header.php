@@ -10,25 +10,19 @@
   <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body>
 
-<!--======== HEADER SECTION =========-->
+  <div class="wrapper">
 
-  <header id="top">
-    <nav class="flex_container">
-      <p><?php the_field('nav_name', 'option'); ?></p>
-      <?php wp_nav_menu( array(
-          'container' => false,
-          'theme_location' => 'primary'
-        ),'option'); ?>
-    </nav>
-    <h1><?php the_field('main_header'); ?></h1>
-  </header>
-
-  <li><a href="http://christinaspencer.ca/#about">about</a></li>
-
-<!--======== ABOUT SECTION =========-->
-
-  <section class="about"></section>
-
-  
+    <header id="top">
+      <div class="nav_container">
+        <nav class="flex_container">
+           <?php the_field('nav_name'); ?>
+            <?php wp_nav_menu( array(
+              'container' => false,
+              'theme_location' => 'primary'
+            )); ?>
+        </nav>
+      </div>
+      <?php the_field('main_header'); ?>
+    </header>

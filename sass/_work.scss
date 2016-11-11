@@ -1,0 +1,26 @@
+#work{
+	justify-content:space-between;
+	flex: 1;
+		.work_image_container{
+			width: 48.5%;
+				img{
+					width: 100%;
+				}
+		}
+		.work_text_container{
+			width: 48.5%;
+			padding: 3% 2%;
+		}
+}
+.work_container{
+	padding: 1%;
+	width: 100%;
+	background-color: rgba(255,255,255,0.3);
+}
+.wpcf7{
+	display: flex;
+	width: 80%;
+	.wpcf7-form-control-wrap .your-email{
+		float: left;
+	}
+}

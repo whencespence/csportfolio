@@ -85,6 +85,14 @@ function hackeryou_scripts() {
     null, // version number
     true //load in footer
   );
+
+  wp_enqueue_script(
+    'plugins', //handle
+    "https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.0.0/jquery.smooth-scroll.min.js",
+    false, //dependencies
+    null, // version number
+    true //load in footer
+  );
 }
 
 add_action( 'wp_enqueue_scripts', 'hackeryou_scripts');
@@ -279,4 +287,18 @@ function get_post_parent($post) {
 	else {
 		return $post->ID;
 	}
+}
+
+//advanced custom fields options plugin
+if( function_exists('acf_add_options_page') ) {
+	acf_add_options_page();
+}
+
+//display custom post types on page.php
+add_filter( 'pre_get_posts', 'my_get_posts' );
+
+function my_get_posts( $query ) {
+	if ( is_home() && $query->is_main_query() )
+		$query->set( 'post_type', array( 'post', 'portfolio' ) );
+	return $query;
 }

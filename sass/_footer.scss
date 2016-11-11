@@ -1,3 +1,39 @@
-footer {
-	clear: both;
+footer{
+	margin-bottom: 40px;
+}
+.status_container{
+	width: 54%;
+	margin-bottom: 50px;
+}
+.status_container>p.light{
+	width: 50%;
+}
+.status_container>h2,.social>h2{
+	padding-bottom: 30px;
+}
+.social>li{
+	list-style: none;
+	padding-right: 15px;
+	float: left;
+		.fa{
+			font-size: 1.15rem;
+			color: #bbb;
+			transition: .2s all ease;
+				&:hover,&:focus{
+					color: black;
+				}
+		}
+}
+.copyright{
+	width: 100%;
+}
+p.top{
+	margin-left: auto;
+	color: black;
+}
+p.top a:focus,p.top a:hover{
+	color:#bbb;
+}
+.copyright>p.light, p.top a{
+	font-size: 0.9rem;
 }
