@@ -1,26 +1,51 @@
-#work{
-	justify-content:space-between;
+section#work{
+	margin-top: 0;
+}
+.div.work_container{
 	flex: 1;
-		.work_image_container{
-			width: 48.5%;
-				img{
-					width: 100%;
-				}
-		}
-		.work_text_container{
-			width: 48.5%;
-			padding: 3% 2%;
-		}
-}
-.work_container{
-	padding: 1%;
 	width: 100%;
-	background-color: rgba(255,255,255,0.3);
+	padding: 2%;
 }
-.wpcf7{
-	display: flex;
-	width: 80%;
-	.wpcf7-form-control-wrap .your-email{
-		float: left;
-	}
+div.work_image_container{
+	width: 65%;
+	padding: 4%;
+		img{
+			width: 100%;
+			-webkit-box-shadow: 2px 2px 20px 0px rgba(0,0,0,0.5);
+			-moz-box-shadow: 2px 2px 20px 0px rgba(0,0,0,0.5);
+			box-shadow: 2px 2px 20px 0px rgba(0,0,0,0.5);
+		}
+}
+.work_text_container{
+	width: 35%;
+	padding: 4%;
+	margin-left: auto;
+}
+.work_text_container>p{
+	font-weight: 300;
+}
+div.work_container:first-child{
+	background-color: rgba(185,232,190,0.35);
+}
+div.work_container:nth-of-type(2){
+	background-color: rgba(244,188,22,0.12);
+	margin: 4% 0;
+}
+div.work_container:last-child{
+	background-color: rgba(158,158,158,0.5);
+}
+.work_text_container>.button{
+	padding: 6px 16px;
+	display: inline-flex;
+	border: 1px solid black;
+	border-radius: 1px;
+	margin: 16% 4% 0 0;
+	transition: .2s ease-in-out;
+		&:focus,&:hover{
+			background-color: black;
+			color: white;
+		}
+}
+.work_text_container>.button a{
+	font-size: 0.9rem;
 }

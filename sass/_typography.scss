@@ -10,13 +10,15 @@ h2{
 	position: relative;
 	font-size: 1.119rem;
 	font-weight: 400;
+	letter-spacing: 0.5px;
 	padding-bottom: 50px;
 	line-height: 1.6;
 }
 h2::after{
 	content: "";
 	left: 0;
-	top: 37px;
+	top: 36px;
+	margin: 2px 0;
 	width: 30px;
 	height: 1px;
 	z-index: 10;
@@ -26,6 +28,7 @@ h2::after{
 h3{
 	position: relative;
 	font-size: 1.169rem;
+	letter-spacing: 0.5px;
 	// color: #ffffff;
 	font-weight: 400;
 	padding-bottom: 50px;
@@ -43,10 +46,10 @@ h3::after{
 }
 
 ::selection {
-  background: #B4E7F8;
+  background: rgba(255,255,0,0.6);
 }
 ::-moz-selection {
-  background: #B4E7F8;
+  background: rgba(255,255,0,0.6);
 }
 
 // Link highlighter effect
@@ -73,24 +76,12 @@ a {
 	text-decoration: none;
 	transition: color 0.15s cubic-bezier(0.33, 0.66, 0.66, 1) 0;
 }
-// a.button{
-// 	color: #151515;
-// 	padding: 10px 4%;
-// 	border: 1px solid black;
-// 	transition: .2s ease-in-out;
-// 	border-radius: 1px;
-// 	font-size: 1.124rem;
-// 		a.button>&:hover,&:focus{
-// 			background-color: black;
-// 			color: white;
-// 		}
-// }
 
 /* paragraphs */
 
 p {
 	line-height: 30px;
-	font-size: 1.123;
+	font-size: 1.123rem;
 	font-weight: 300;
 }
 p.light{

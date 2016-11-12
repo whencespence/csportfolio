@@ -1,4 +1,4 @@
-#contact .contact_container{
+#contact.contact_container{
 	width: 100%;
 	display: block;
 		input[type=name], input[type=email], textarea {
@@ -10,9 +10,36 @@
 			text-align: left;
 		}
 }
-section#contact>p.contact_header{
+section#contact>p.contact_title{
 	font-size: 3.6rem;
 	font-weight: 700;
 	line-height: 1.25;
 	width: 60%;
+	margin:5.5% 0 6.5% 0;
 }
+form{
+	margin-bottom: 14%;
+}
+.wpcf7{
+	display: flex;
+	width: 70%;
+		input[name=your-name],input[type=email],{
+			width: 75%;
+		}
+		input[type=submit]{
+			padding: 6px 16px;
+			border: 1px solid black;
+			border-radius: 1px;
+			margin-top: 5%;
+			background-color: white;
+			transition: .2s ease-in-out;
+				&:hover,&:focus{
+					background-color:black;
+					color: white;
+				}
+		}
+		textarea{
+			width:100%;
+		}
+}
+

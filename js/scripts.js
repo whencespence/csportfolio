@@ -9,10 +9,5 @@ $(function(){
 	});
 
 	$('a').smoothScroll();
-
-    $('nav.a').click(function(){
-        $('nav.a').css('background-color', 'black');
-        $(this).css('color', 'white');
-	});
-
+	
 });

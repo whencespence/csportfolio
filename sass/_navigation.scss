@@ -2,7 +2,8 @@ header{
 	width: 100%;
 		h1{
 			width: 60%;
-			padding: 17% 0 7% 0;
+			height: 100vh;
+			transform:translateY(43%);
 		}
 }
 .nav_container{
@@ -18,8 +19,9 @@ nav{
 	width: 100%;
 	padding: 20px 0 15px 0;
 	background-color: #FAFAFA;
-		>p{
+		>p,a{
 			font-size: 1.125rem;
+			letter-spacing: 0.25px;
 		}
 		ul#menu-main-nav{
 			display: flex;
@@ -38,10 +40,6 @@ nav{
 						}
 				}
 		}
-}
-nav.a:visited,nav.a:link{
-	background-color: black;
-	color: white;
 }
 
 // .ham_nav{

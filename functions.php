@@ -49,8 +49,9 @@ of writing our own link tags in the header. */
 
 function hackeryou_styles(){
 	wp_enqueue_style('style', get_stylesheet_uri() );
-
 	wp_enqueue_style('fontawesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
+	wp_enqueue_style('googlefonts', 'https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+	wp_enqueue_style('devicons','http://cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css');
 }
 
 add_action( 'wp_enqueue_scripts', 'hackeryou_styles');
@@ -82,14 +83,6 @@ function hackeryou_scripts() {
     'scripts', //handle
     get_template_directory_uri() . '/js/main.min.js', //source
     array( 'jquery', 'plugins' ), //dependencies
-    null, // version number
-    true //load in footer
-  );
-
-  wp_enqueue_script(
-    'plugins', //handle
-    "https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.0.0/jquery.smooth-scroll.min.js",
-    false, //dependencies
     null, // version number
     true //load in footer
   );
