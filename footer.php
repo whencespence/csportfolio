@@ -9,10 +9,9 @@
 						<?php get_template_part('/template_parts/social-media'); ?>
 					</div>
 				</div>
-				<div class="copyright flex_container">
+				<div class="copyright">
 					<p class="light"><a href="<?php the_field('copyright_icon','option'); ?>"></a>
 					<?php the_field('copyright','option'); ?></p>
-					<p class="top"><a href="#" title="Back to top"><i class="fa fa-arrow-up" aria-hidden="true"></i> Top</a></p>
 				</div>
 			</footer>
 
@@ -28,7 +27,7 @@
 	 s.parentNode.insertBefore(g,s)}(document,"script"));
 	</script>
 
-	<!-- <?php wp_footer(); ?> -->
+	<?php wp_footer(); ?>
 
 
 </body>

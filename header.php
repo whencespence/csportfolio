@@ -13,14 +13,16 @@
 
   <div class="wrapper">
 
-    <header id="top">
+    <header>
       <div class="nav_container">
         <nav class="flex_container">
-           <?php the_field('nav_name'); ?>
-            <?php wp_nav_menu( array(
-              'container' => false,
-              'theme_location' => 'primary'
-            )); ?>
+          <a href="<?php echo home_url( '/' ); ?>" rel="home">
+            <?php the_field('nav_name'); ?>
+          </a>
+          <?php wp_nav_menu( array(
+            'container' => false,
+            'theme_location' => 'primary'
+          )); ?>
         </nav>
       </div>
       <?php the_field('main_header'); ?>

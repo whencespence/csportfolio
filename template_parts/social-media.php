@@ -8,19 +8,19 @@
 	        $social_media_url = get_sub_field('social_media_url','option');
 
 	        	if($social_media_name == 'linkedin' && $social_media_url !== " ") {
-	        		echo '<li><a href="' . $social_media_url . '"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>';
+	        		echo '<li><a href="' . $social_media_url . '" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>';
 	        	}
 	        	elseif ($social_media_name == 'twitter') {
-					echo '<li><a href="' . $social_media_url . '"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>';
+					echo '<li><a href="' . $social_media_url . '" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>';
 	        	}
 	        	elseif($social_media_name == 'github') {
-	        		echo '<li><a href="' . $social_media_url . '"><i class="fa fa-github" aria-hidden="true"></i></a></li>';
+	        		echo '<li><a href="' . $social_media_url . '" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>';
 	        	}
 	        	elseif($social_media_name == 'codepen') {
-	        		echo '<li><a href="' . $social_media_url . '"><i class="fa fa-codepen" aria-hidden="true"></i></a></li>';
+	        		echo '<li><a href="' . $social_media_url . '" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i></a></li>';
 	        	}
 	        	elseif($social_media_name == 'medium') {
-	        		echo '<li><a href="' . $social_media_url . '"><i class="fa fa-medium" aria-hidden="true"></i></a></li>';
+	        		echo '<li><a href="' . $social_media_url . '" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i></a></li>';
 	        	}
 
 	    endwhile;

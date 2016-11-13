@@ -14,7 +14,6 @@ function theme_setup() {
 	set_post_thumbnail_size(120, 90, true);
 	add_image_size('square', 150, 150, true);
 
-
 	// Add default posts and comments RSS feed links to head
 	add_theme_support( 'automatic-feed-links' );
 
@@ -51,7 +50,6 @@ function hackeryou_styles(){
 	wp_enqueue_style('style', get_stylesheet_uri() );
 	wp_enqueue_style('fontawesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
 	wp_enqueue_style('googlefonts', 'https://fonts.googleapis.com/css?family=Roboto:300,400,700');
-	wp_enqueue_style('devicons','http://cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css');
 }
 
 add_action( 'wp_enqueue_scripts', 'hackeryou_styles');

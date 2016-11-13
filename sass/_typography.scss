@@ -7,11 +7,11 @@ h1{
 	line-height: 1.25;
 }
 h2{
+	display: block;
 	position: relative;
-	font-size: 1.119rem;
+	font-size: 1.123rem;
 	font-weight: 400;
-	letter-spacing: 0.5px;
-	padding-bottom: 50px;
+	padding-bottom: 30px;
 	line-height: 1.6;
 }
 h2::after{
@@ -28,7 +28,6 @@ h2::after{
 h3{
 	position: relative;
 	font-size: 1.169rem;
-	letter-spacing: 0.5px;
 	// color: #ffffff;
 	font-weight: 400;
 	padding-bottom: 50px;
@@ -44,48 +43,30 @@ h3::after{
 	position: absolute;
 	background-color: #666666;
 }
-
 ::selection {
   background: rgba(255,255,0,0.6);
 }
 ::-moz-selection {
   background: rgba(255,255,0,0.6);
 }
-
-// Link highlighter effect
-.link a:hover, .link a:focus, .link a:active {
-	background: #B4E7F8;
-}
-.link a:hover, .link a:focus, .link a:active { 
-	background: #B4E7F8;
-}
-a:active, a:hover { 
-	color: #000000;
-	cursor: pointer;
-	outline: 0px none #000000;
-}
-
-.link a { 
-	border-bottom: 3px solid #B4E7F8;
-	box-shadow: inset 0px -4px 0px #B4E7F8;
-	color: inherit;
-	transition: background 0.15s cubic-bezier(0.33, 0.66, 0.66, 1) 0;
-}
 a { 
-	color: inherit;
+	color: black;
 	text-decoration: none;
-	transition: color 0.15s cubic-bezier(0.33, 0.66, 0.66, 1) 0;
+	transition: 0.2s all ease;
 }
 
 /* paragraphs */
 
 p {
-	line-height: 30px;
-	font-size: 1.123rem;
+	font-size: 0.97rem;
 	font-weight: 300;
+	line-height: 1.6;
 }
 p.light{
-	color: #666;
+
+	line-height: 1.6;
+	font-weight: 300;
+	font-size: 0.86rem;
 		a{
 			color: black;
 			text-decoration: underline;

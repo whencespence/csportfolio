@@ -1,5 +1,5 @@
-section#work{
-	margin-top: 0;
+section #work{
+	margin:5% 0 6% 0;
 }
 .div.work_container{
 	flex: 1;
@@ -29,7 +29,7 @@ div.work_container:first-child{
 }
 div.work_container:nth-of-type(2){
 	background-color: rgba(244,188,22,0.12);
-	margin: 4% 0;
+	margin: 6% 0;
 }
 div.work_container:last-child{
 	background-color: rgba(158,158,158,0.5);
@@ -48,4 +48,7 @@ div.work_container:last-child{
 }
 .work_text_container>.button a{
 	font-size: 0.9rem;
+}
+div.skills.flex_container{
+	
 }

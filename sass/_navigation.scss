@@ -1,10 +1,10 @@
 header{
 	width: 100%;
-		h1{
-			width: 60%;
-			height: 100vh;
-			transform:translateY(43%);
-		}
+}
+h1{
+	padding-top: 26%;
+	width: 60%;
+	height: 100vh;
 }
 .nav_container{
 	width: 90%;
@@ -12,6 +12,7 @@ header{
 	position: fixed;
 }
 nav{
+	display: block;
 	justify-content:space-between;
 	align-items:center;
 	left:auto;
@@ -19,10 +20,7 @@ nav{
 	width: 100%;
 	padding: 20px 0 15px 0;
 	background-color: #FAFAFA;
-		>p,a{
-			font-size: 1.125rem;
-			letter-spacing: 0.25px;
-		}
+	opacity: 0.85;
 		ul#menu-main-nav{
 			display: flex;
 			align-items:center;
@@ -34,12 +32,16 @@ nav{
 					margin-left: 20px;
 					border: 1px solid transparent;
 					border-radius: 1px;
-					transition: .2s ease-in-out;
+					font-size: 1.1rem;
+					transition: 0.2s ease-in-out;
 						&:hover,&:focus{
 							border-color:black;
 						}
 				}
 		}
+}
+nav.flex_container a p{
+	font-size: 1.125rem;
 }
 
 // .ham_nav{

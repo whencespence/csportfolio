@@ -1,9 +1,9 @@
 footer{
-	margin-bottom: 40px;
+	margin-bottom: 6%;
 }
 .status_container{
 	width: 54%;
-	margin-bottom: 50px;
+	margin-bottom: 70px;
 }
 .status_container>p.light{
 	width: 50%;
@@ -16,7 +16,7 @@ footer{
 	padding-right: 15px;
 	float: left;
 		.fa{
-			font-size: 1.15rem;
+			font-size: 1rem;
 			color: #bbb;
 			transition: .2s all ease;
 				&:hover,&:focus{
@@ -34,6 +34,6 @@ p.top{
 p.top a:focus,p.top a:hover{
 	color:#bbb;
 }
-.copyright>p.light, p.top a{
-	font-size: 0.9rem;
+.copyright>p.light{
+	font-size: 0.75rem;
 }

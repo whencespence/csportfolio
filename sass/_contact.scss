@@ -1,37 +1,41 @@
-#contact.contact_container{
+#contact{
+	margin: 6% 0 7% 0;
 	width: 100%;
-	display: block;
-		input[type=name], input[type=email], textarea {
-			width: 100%;
-			font: 0.75rem;
-			border: 1px solid #bbb;
-			margin-top: 20px;
-			padding: 15px 0;
-			text-align: left;
-		}
 }
-section#contact>p.contact_title{
+#contact>p.contact_title{
 	font-size: 3.6rem;
 	font-weight: 700;
 	line-height: 1.25;
-	width: 60%;
-	margin:5.5% 0 6.5% 0;
-}
-form{
-	margin-bottom: 14%;
+	margin:8% 0 7% 0;
 }
 .wpcf7{
-	display: flex;
-	width: 70%;
-		input[name=your-name],input[type=email],{
-			width: 75%;
+	width: 53%;
+	margin-bottom: 14%;
+		input,textarea{
+			border: 1px solid #ccc;
+			background-color: #fafafa;
+			padding: 10px 12px;
+			border-radius:2px;
+			font-size: 1rem;
+			margin-bottom: 4%;
+				&:focus{
+					box-shadow: 0 0 2px black;
+					outline: none !important;
+				}
+		}
+		input[name=your-name],input[name=your-email]{
+			width: 48%;
+		}
+		input[name=subject]{
+			width:100%;
 		}
 		input[type=submit]{
 			padding: 6px 16px;
 			border: 1px solid black;
 			border-radius: 1px;
-			margin-top: 5%;
-			background-color: white;
+			margin: 4% 0;
+			font-size: 1rem;
+			background-color: transparent;
 			transition: .2s ease-in-out;
 				&:hover,&:focus{
 					background-color:black;
@@ -40,6 +44,20 @@ form{
 		}
 		textarea{
 			width:100%;
+			height:130px;
+		}
+}
+.contact_content{
+	width: 35%;
+	margin-left: auto;
+		p{
+			font-weight: 400;
+			font-size: 1rem;
+		}
+		p:nth-of-type(even){
+			font-weight: 300;
+			font-size: 0.9rem;
+			padding-bottom: 20.5%;
 		}
 }
 
