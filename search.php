@@ -1,15 +1,16 @@
 <?php get_header(); ?>
+
 <div class="main">
 
 	<section class="search">
 		<?php if ( have_posts() ) : ?>
 
-			<h1>Search Results for: <?php echo get_search_query(); ?></h1>
+			<h3>Search Results for: <?php echo get_search_query(); ?></h3>
 			<?php get_template_part( 'loop', 'search' ); ?>
 
 		<?php else : ?>
 
-			<p>Sorry, but nothing matched your search criteria. Try searching with some keywords, or send me an email at hello[at]christinaspencer.ca.</p>
+			<p>Sorry, nothing matched your search criteria. Try searching with some keywords, or send me an email at hello[at]christinaspencer.ca.</p>
 			
 			<?php get_search_form(); ?>
 

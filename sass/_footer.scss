@@ -1,15 +1,12 @@
 footer{
 	margin-bottom: 6%;
 }
-.status_container{
-	width: 54%;
-	margin-bottom: 70px;
+.status_container,.social{
+	width: 48.5%;
+	margin-bottom: 5%;
 }
 .status_container>p.light{
-	width: 50%;
-}
-.status_container>h2,.social>h2{
-	padding-bottom: 30px;
+	width: 30%;
 }
 .social>li{
 	list-style: none;
@@ -26,14 +23,7 @@ footer{
 }
 .copyright{
 	width: 100%;
-}
-p.top{
-	margin-left: auto;
-	color: black;
-}
-p.top a:focus,p.top a:hover{
-	color:#bbb;
-}
-.copyright>p.light{
-	font-size: 0.75rem;
+		p.light{
+			font-size: 0.75rem;
+		}
 }

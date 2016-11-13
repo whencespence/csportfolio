@@ -39,3 +39,25 @@ body {
 .flex_container{
 	display: flex;
 }
+
+// SEARCH.PHP & SEARCHBOX///////////////
+.searchbox{
+	margin: 1% 0 5% 0;
+		input[type=search]{
+			padding: 6px 16px;
+			display: inline-flex;
+			border: 1px solid black;
+			border-radius: 1px;
+			margin: 2% 0;
+			margin-right: 3%;
+			transition: .2s ease-in-out;
+				a{
+					font-size: 0.9rem;
+				}
+					&:focus,&:hover{
+						background-color: black;
+						color: white;
+						border-color: black;
+					}
+		}
+}

@@ -11,7 +11,7 @@
 
 <body>
 
-  <div class="wrapper">
+  <div class="wrapper main">
 
     <header>
       <div class="nav_container">

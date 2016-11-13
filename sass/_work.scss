@@ -1,54 +1,67 @@
 section #work{
 	margin:5% 0 6% 0;
 }
-.div.work_container{
-	flex: 1;
+.work_text_container{
 	width: 100%;
-	padding: 2%;
 }
-div.work_image_container{
-	width: 65%;
-	padding: 4%;
-		img{
-			width: 100%;
-			-webkit-box-shadow: 2px 2px 20px 0px rgba(0,0,0,0.5);
-			-moz-box-shadow: 2px 2px 20px 0px rgba(0,0,0,0.5);
-			box-shadow: 2px 2px 20px 0px rgba(0,0,0,0.5);
+div.work_container{
+	width: 100%;
+		.work_image_container{
+			width: 62%;
+			padding: 4% 0;
+			margin: 0 auto;
+				img{
+					width: 100%;
+					-webkit-box-shadow: 2px 2px 20px 0px rgba(0,0,0,0.5);
+					-moz-box-shadow: 2px 2px 20px 0px rgba(0,0,0,0.5);
+					box-shadow: 2px 2px 20px 0px rgba(0,0,0,0.5);
+					transition: 0.8s opacity;
+						&:focus,&:hover{
+							opacity: 0.85;
+						}
+				}
 		}
 }
-.work_text_container{
-	width: 35%;
-	padding: 4%;
-	margin-left: auto;
-}
-.work_text_container>p{
-	font-weight: 300;
-}
-div.work_container:first-child{
+.work_container:nth-child(1) .work_inner_container{
 	background-color: rgba(185,232,190,0.35);
 }
-div.work_container:nth-of-type(2){
+.work_container:nth-child(2) .work_inner_container{
 	background-color: rgba(244,188,22,0.12);
-	margin: 6% 0;
+	margin: 4% 0;
 }
-div.work_container:last-child{
+.work_container:nth-child(3) .work_inner_container{
 	background-color: rgba(158,158,158,0.5);
 }
-.work_text_container>.button{
-	padding: 6px 16px;
-	display: inline-flex;
-	border: 1px solid black;
-	border-radius: 1px;
-	margin: 16% 4% 0 0;
-	transition: .2s ease-in-out;
-		&:focus,&:hover{
-			background-color: black;
-			color: white;
+
+.work_text_container{
+	flex:1;
+	justify-content:space-between;
+	margin:5% 0 6% 0;
+		.half,.other_half{
+			width: 48.5%;
 		}
-}
-.work_text_container>.button a{
-	font-size: 0.9rem;
-}
-div.skills.flex_container{
-	
+		.other_half{
+			p.skill_title{
+				font-weight: 400;
+				padding-top: 2%;
+			}
+			p.skill_names{
+				display: inline-flex;
+			}
+			.button{
+				padding: 6px 16px;
+				border: 1px solid black;
+				border-radius: 1px;
+				margin: 2% 0;
+				margin-right: 3%;
+				transition: .2s ease-in-out;
+					a.button{
+						font-size: 0.9rem;
+					}
+				&:focus,&:hover{
+						background-color: black;
+						color: white;
+					}
+			}
+		}
 }
