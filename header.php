@@ -15,7 +15,7 @@
 
     <header>
       <div class="nav_container">
-        <nav class="flex_container">
+        <nav class="large flex_container">
           <a href="<?php echo home_url( '/' ); ?>" rel="home">
             <?php the_field('nav_name'); ?>
           </a>

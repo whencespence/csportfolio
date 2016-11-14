@@ -3,10 +3,10 @@
 
 
 /* TEAM */
-  <your title>: <your name>
-  Site:
-  Twitter:
-  Location:
+  Front-end Developer : Christina Spencer
+  Site: http://christinaspencer.ca
+  Twitter: @whencespence
+  Location: Toronto, ON Canada
 
 /* THANKS */
   WordPress starter theme from HackerYou - http://hackeryou.com

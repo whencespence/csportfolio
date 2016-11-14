@@ -1,14 +1,13 @@
 #contact{
 	margin-bottom: 7%;
-	padding: 0 5%;
+	padding: 4% 5%;
 	background-color: rgba(211,211,211,0.2);
 }
 #contact>p.contact_title{
 	font-size: 3.6rem;
 	font-weight: 700;
 	line-height: 1.25;
-	margin:4% 0 5% 0;
-	padding-top: 5%;
+	margin:2% 0 5% 0;
 }
 .contact_container{
 	justify-content:space-between;
@@ -17,9 +16,9 @@
 	display: flex;
 	justify-content:space-between;
 	width: 70%;
-		input,textarea{
-			border: 1px solid #ccc;
-			background-color: #fafafa;
+		input{
+			border: 1px solid black;
+			background-color: transparent;
 			padding: 10px 12px;
 			border-radius:2px;
 			font-size: 0.9rem;
@@ -27,11 +26,11 @@
 				&:focus{
 					background-color: black;
 					color: white;
-					border-color: black;
 				}
 		}
 		input[name=your-name],input[name=your-email]{
 			justify-content:space-between;
+			color: black;
 		}
 		input[name=subject]{
 			width:100%;
@@ -48,10 +47,19 @@
 					color: white;
 				}
 		}
-		textarea{
-			width:100%;
-			height:130px;
-			margin-bottom: 0;
+		textarea[name=message]{
+			border: 1px solid black;
+			background-color: transparent;
+			padding: 10px 12px;
+			border-radius:2px;
+			width: 100%;
+			height: 130px;
+			font-size: 0.9rem;
+			margin-bottom: 0%;
+				&:focus{
+					background-color: black;
+					color: white;
+				}
 		}
 }
 .contact_content{

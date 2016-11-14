@@ -5,6 +5,12 @@ h1{
 	padding-top: 26%;
 	width: 60%;
 	height: 100vh;
+	transition: .4s all ease;
+}
+span{
+	display:inline-block;
+	transition:all 0.5s;
+	transition-timing:cubic-bezier(0,1,0,1);
 }
 .nav_container{
 	width: 90%;
@@ -17,8 +23,8 @@ nav{
 	align-items:center;
 	left:auto;
 	right:auto;
+	transition:0.3s all ease;
 	width: 100%;
-	padding: 20px 0 15px 0;
 	background-color: #FAFAFA;
 	opacity: 0.85;
 		ul#menu-main-nav{
@@ -28,7 +34,7 @@ nav{
 					cursor: pointer;
 				}
 				li>a{
-					padding: 6px 16px;
+					padding: 6px 13px;
 					margin-left: 20px;
 					border: 1px solid transparent;
 					border-radius: 1px;
@@ -42,6 +48,17 @@ nav{
 }
 nav.flex_container a p{
 	font-size: 1.125rem;
+	transition: 0.2s all ease;
+		&:focus,&:hover{
+			color: black;
+			text-decoration: line-through;
+		}
+}
+nav.large{
+	height:100px;
+}
+nav.small{
+	height:38px;
 }
 
 // .ham_nav{

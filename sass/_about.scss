@@ -7,10 +7,10 @@
 .about_image1{
 	width: 48.5%;
 	overflow: hidden;
+	position: relative;
 		img{
-			position: relative;
-			top: -150px;
-			width: 100%;
+			position: absolute;
+			top: -76px;
 		}
 }
 .about_image2{
@@ -19,8 +19,7 @@
 	overflow: hidden;
 		img{
 			position: absolute;
-			top: -90px;
-			width: 100%;
+			top: -95px;
 		}
 }
 .about_text_container{
