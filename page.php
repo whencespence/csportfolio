@@ -78,16 +78,18 @@
 
                 <div class="other_half">
                   <p><?php the_content(); ?></p>
-                  <p class="skill_title"><?php the_field('skill_title'); ?></p>
-
-                  <?php while( have_rows('skill_type') ): the_row(); ?>
-                      <p class="skill_names"><?php the_sub_field('skill_names'); ?></p>
-                  <?php endwhile; ?>
+                  
+                  <div class="work_skills_container">
+                    <p class="skill_title"><?php the_field('skill_title'); ?></p>
+                    <?php while( have_rows('skill_type') ): the_row(); ?>
+                        <p class="skill_names"><?php the_sub_field('skill_names'); ?></p>
+                    <?php endwhile; ?>
+                  </div>
                   
                   <?php while( have_rows('portfolio_links') ): the_row(); ?>
                     <?php $link_name = get_sub_field('link_name'); ?>
                     <?php $link_url = get_sub_field('link_url'); ?>
-                    <a href="<?php echo $link_url?>" target="_blank" class="button flex_container"><?php echo $link_name?></a>
+                    <a href="<?php echo $link_url?>" target="_blank" class="button"><?php echo $link_name?></a>
                   <?php endwhile; ?>
                 </div>
 
@@ -95,8 +97,6 @@
 
       </div>
 
-        
-        
     <?php endwhile; // end the loop?>
     <?php wp_reset_query(); ?>
 
@@ -106,12 +106,13 @@
 
 <!--======== CONTACT SECTION =========-->
 
+</div><!-- end of wrapper -->
+
   <section id="contact">
 
     <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
     <p class="contact_title"><?php the_field('contact_title'); ?></p>
-    <h2><?php the_field('contact_intro'); ?></h2>
       <div class="contact_container flex_container">
         <?php echo do_shortcode( '[contact-form-7 id="49" title="Contact form 1"]' ); ?>
         <div class="contact_content">
@@ -128,5 +129,7 @@
 
     <?php endwhile; // end the loop?>
   </section>
+
+  <div class="wrapper"><!-- restart wrapper -->
 
 <?php get_footer(); ?>
