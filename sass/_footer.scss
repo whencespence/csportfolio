@@ -1,11 +1,16 @@
 footer{
 	margin-bottom: 6%;
+		.footer_container .flex_container{
+			justify-content:space-between;
+			flex:1;
+				.status_container,.social{
+					width: 48.5%;
+					margin-bottom: 5%;
+				}
+		}
 }
-.status_container,.social{
-	width: 48.5%;
-	margin-bottom: 5%;
-}
-.status_container>p.light{
+
+.footer_container .status_container>p.light{
 	width: 30%;
 }
 .social>li{

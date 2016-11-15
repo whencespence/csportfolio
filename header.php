@@ -23,7 +23,6 @@
             'theme_location' => 'primary'
           )); ?>
         </nav>
-        <div id="ham_nav">MENU</div>
     </div>
 
     <div class="wrapper"> <!-- wrapper begins -->

@@ -1,12 +1,14 @@
 			<footer>
-				<div class="flex_container">
-					<div class="status_container">
-						<h2><?php the_field('status_title','option'); ?></h2>
-						<p class="light"><?php the_field('status_text','option'); ?></p>
-					</div>
-					<div class="social">
-						<h2><?php the_field('social_title','option'); ?></h2>
-						<?php get_template_part('/template_parts/social-media'); ?>
+				<div class="footer_container">
+					<div class="flex_container">
+						<div class="status_container">
+							<h2><?php the_field('status_title','option'); ?></h2>
+							<p class="light"><?php the_field('status_text','option'); ?></p>
+						</div>
+						<div class="social">
+							<h2><?php the_field('social_title','option'); ?></h2>
+							<?php get_template_part('/template_parts/social-media'); ?>
+						</div>
 					</div>
 				</div>
 				<div class="copyright">

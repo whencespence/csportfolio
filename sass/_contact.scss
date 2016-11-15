@@ -11,24 +11,26 @@
 }
 
 .contact_container {
+	width: 100%;
 	justify-content:space-between;
 	flex:1;
-}
-
-.contact_content{
-	width: 48.5%;
-		.fa{
-			font-size: 1rem;
-			margin-right: 10px;
-		}
-		p.contact_icon{
-			font-weight: 300;
-			font-size: 0.9rem;
-			margin-bottom: 3.5%;
-			transition: 0.2s all ease;
-				&:focus,&:hover{
-					color: black;
-					text-decoration: line-through;
+		.contact_content{
+			width: 48.5%;
+				.fa{
+					color:#bbb;
+					font-size: 1rem;
+					margin-right: 10px;
+				}
+				p.contact_icon{
+					font-weight: 300;
+					font-size: 0.9rem;
+					margin-bottom: 3.5%;
+					transition: 0.2s all ease;
+						&:focus,&:hover{
+							color: black;
+							text-decoration: line-through;
+						}
 				}
 		}
 }
+

@@ -24,34 +24,31 @@
 	}
 }
 
-
 @media all and (max-width: 768px){
 	header h1{
 		padding-top: 40%;
 	}
 }
 
-
 @media all and (max-width: 700px){
 	div.wrapper{
-		width: 87.5%;
+		width: 87%;
 	}
 	header h1{
 		font-size: 3rem;
 		padding-top: 45%;
 		width:95%;
 	}
-	#ham_nav {
+	.side_nav {
 		display: block;
 	}
 	nav.small{
-		display: none;
+		display: none
 	}
 	.nav_container{
-		padding:0;
-			ul#menu-main-nav.menu, a p{
-				display: none;
-			}
+		ul#menu-main-nav.menu{
+			display: none;
+		}
 	}
 	div.contact_container{
 		flex-direction:column;
@@ -147,6 +144,9 @@
 	#contact{
 		padding:10% 0;
 	}
+	.contact_content{
+		flex-direction:column;
+	}
 }
 
 
@@ -155,8 +155,5 @@
 		padding-top: 65%;
 		width: 100%;
 		font-size: 2.7rem;
-	}
-	.contact_content{
-		flex-direction:column;
 	}
 }
