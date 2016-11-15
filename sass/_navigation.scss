@@ -59,13 +59,14 @@ nav.small{
 	height:45px;
 }
 
-///////////////HAMBURGER NAV///////////////
+////////////////////////HAMBURGER NAV///////////////////////
 #ham_nav{
 	position: absolute;
 	display: none;
 	cursor:pointer;
 	transform:rotate(450deg);
-	right: -0.6%;
+	right: -5px;
+	top: 50px;
 	letter-spacing: 1.25px;
 	z-index: 1000;
 		&:hover,&:focus{

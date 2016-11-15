@@ -38,11 +38,14 @@
 	}
 	header h1{
 		font-size: 3rem;
-		padding-top: 55%;
+		padding-top: 45%;
 		width:95%;
 	}
 	#ham_nav {
 		display: block;
+	}
+	nav.small{
+		display: none;
 	}
 	.nav_container{
 		padding:0;
@@ -52,15 +55,16 @@
 	}
 	div.contact_container{
 		flex-direction:column;
-			p.contact_title{
-				width: 100%;
-			}
+		// padding: 7% 0;
 			div.contact_content{
-				padding: 5.5% 0 6% 0;
+				padding-top: 5%;
 				width: 100%;
 				display: inline-flex;
 				justify-content:space-between;
 			}
+	}
+	#contact p.contact_title{
+		width: 100%;
 	}
 
 
@@ -88,7 +92,7 @@
 			.half,.other_half{
 				width: 100%;
 					.work_skills_container .skill_title{
-						padding-top: 3.5%;
+						padding-top: 5%;
 					}
 					.work_skills_container p.skill_names{
 						font-size: 0.9rem;
@@ -112,6 +116,11 @@
 
 
 @media all and (max-width: 560px){
+	header h1{
+		font-size: 3rem;
+		padding-top: 50%;
+		width:80%;
+	}
 	.about_image_container.flex_container{
 		height: auto;
 			.about_image1,.about_image2{
@@ -122,11 +131,23 @@
 					}
 			}
 	}
+	div.about_text_container{
+		flex-direction:column;
+		margin:12% 0 15% 0;
+	}
 	.work_container .work_image_container{
 		width: 90%;
 	}
+	.work_text_container{
+		margin: 12% 0 15% 0;
+	}
+	div.about_text_container div.skills_container{
+		padding-top: 10%;
+	}
+	#contact{
+		padding:10% 0;
+	}
 }
-
 
 
 @media all and (max-width: 490px){
@@ -135,10 +156,7 @@
 		width: 100%;
 		font-size: 2.7rem;
 	}
-}
-
-
-
-@media all and (max-width: 320px){
-
+	.contact_content{
+		flex-direction:column;
+	}
 }

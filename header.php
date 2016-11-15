@@ -22,8 +22,8 @@
             'container' => false,
             'theme_location' => 'primary'
           )); ?>
-          <div id="ham_nav">MENU</div>
         </nav>
+        <div id="ham_nav">MENU</div>
     </div>
 
     <div class="wrapper"> <!-- wrapper begins -->
