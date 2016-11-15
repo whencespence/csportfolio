@@ -1,73 +1,25 @@
 #contact{
-	margin-bottom: 7%;
-	padding: 4% 5%;
+	margin: 7% 0 7% 0;
+	padding: 7% 0;
 	background-color: rgba(211,211,211,0.2);
 }
-#contact>p.contact_title{
+#contact p.contact_title{
 	font-size: 3.6rem;
 	font-weight: 700;
 	line-height: 1.25;
-	margin:2% 0 5% 0;
+	width: 48.5%;
 }
-.form{
-	width:70%;
-}
-#wpcf7-f49-p4-o1{
-	display: flex;
-	flex:1;
-	justify-content:space-between;
-		span{
-			display: inline;
-			width: 100%;
-		}
-		input[type=name],input[type=email]{
-			width: 47%;
-			float:right;
-		}
-		input[name="subject"]{
-			width: 100%;
-		}
-		input,textarea{
-			border: 1px solid black;
-			background-color: transparent;
-			padding: 10px 12px;
-			border-radius:2px;
-			font-size: 0.9rem;
-			margin-bottom: 3%;
-				&:focus{
-					outline:none;
-					background-color: black;
-					color: white;
-				}
-				&:placeholder{
-					color: black;
-				}
-		}
-		input[type=submit]{
-			padding: 6px 16px;
-			border: 1px solid black;
-			border-radius: 1px;
-			margin: 3% 0 6% 0;
-			background-color: transparent;
-			transition: .2s ease-in-out;
-				&:hover,&:focus{
-					background-color:black;
-					color: white;
-				}
-		}
-		textarea[name=message]{
-			width: 100%;
-			height: 130px;
-			margin-bottom: 0%;
-		}
 
+.contact_container {
+	justify-content:space-between;
+	flex:1;
 }
-.contact_container .contact_content{
-	padding-left: 15%;
-	// width: 100%;
+
+.contact_content{
+	width: 48.5%;
 		.fa{
 			font-size: 1rem;
-			margin-right: 15px;
+			margin-right: 10px;
 		}
 		p.contact_icon{
 			font-weight: 300;

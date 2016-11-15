@@ -109,29 +109,25 @@
 </div><!-- end of wrapper -->
 
   <section id="contact">
-
+    
+    <div class="wrapper">
     <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-
-    <p class="contact_title"><?php the_field('contact_title'); ?></p>
-
-      <div class="contact_container flex_container">
-        <?php echo do_shortcode( '[contact-form-7 id="49" title="Contact form 1"]' ); ?>
-        
-        <div class="contact_content">
-          <?php while( have_rows('contact_icons') ): the_row(); ?>
-            <?php $contact_icon = get_sub_field('contact_icon'); ?>
-            <?php $contact_url = get_sub_field('contact_url'); ?>
-            <?php $contact_text = get_sub_field('contact_text'); ?>
-              <p class="contact_icon"><a href="<?php echo $contact_url ?>" target="_blank"><i class="fa <?php echo $contact_icon?>" aria-hidden="true" role="link"></i><?php echo $contact_text?></a></p>
-          <?php endwhile; ?>
-
-        </div>
-
+      
+    <div class="contact_container flex_container">
+      <p class="contact_title"><?php the_field('contact_title'); ?></p>
+      <div class="contact_content">
+        <?php while( have_rows('contact_icons') ): the_row(); ?>
+          <?php $contact_icon = get_sub_field('contact_icon'); ?>
+          <?php $contact_url = get_sub_field('contact_url'); ?>
+          <?php $contact_text = get_sub_field('contact_text'); ?>
+            <p class="contact_icon"><a href="<?php echo $contact_url ?>" target="_blank"><i class="fa <?php echo $contact_icon?>" aria-hidden="true" role="link"></i><?php echo $contact_text?></a></p>
+        <?php endwhile; ?>
       </div>
+    </div>
 
     <?php endwhile; // end the loop?>
   </section>
-
+  </div><!--  end wrapper -->
   <div class="wrapper"><!-- restart wrapper -->
 
 <?php get_footer(); ?>

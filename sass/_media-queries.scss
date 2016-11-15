@@ -3,9 +3,14 @@
 		font-size: 3.4rem;
 		width: 75%;
 	}
+	div.contact_container {
+		width: 100%;
+		justify-content:space-between;
+	}
+	div.contact_content{
+		width: auto;
+	}
 }
-
-
 
 
 @media all and (max-width: 980px){
@@ -20,15 +25,6 @@
 }
 
 
-
-
-@media all and (max-width: 850px){
-
-}
-
-
-
-
 @media all and (max-width: 768px){
 	header h1{
 		padding-top: 40%;
@@ -39,7 +35,6 @@
 @media all and (max-width: 700px){
 	div.wrapper{
 		width: 87.5%;
-		margin: 0 0 0 2.5%;
 	}
 	header h1{
 		font-size: 3rem;
@@ -55,6 +50,19 @@
 				display: none;
 			}
 	}
+	div.contact_container{
+		flex-direction:column;
+			p.contact_title{
+				width: 100%;
+			}
+			div.contact_content{
+				padding: 5.5% 0 6% 0;
+				width: 100%;
+				display: inline-flex;
+				justify-content:space-between;
+			}
+	}
+
 
 ///////////////////////// ABOUT SECTION ////////////////////////////
 	div.about_text_container{
@@ -66,8 +74,8 @@
 			}
 			div.skills_container{
 				padding-top: 4%;
-					p{
-						font-size: 0.85rem;
+					div.skills p,div.tools p{
+						font-size: 0.9rem;
 					}
 			}
 	}
@@ -76,32 +84,31 @@
 	.work_text_container{
 		flex-direction:column;
 		justify-content:space-between;
-		margin:6% 0 7% 0;
+		margin:8% 0 10% 0;
 			.half,.other_half{
 				width: 100%;
 					.work_skills_container .skill_title{
 						padding-top: 3.5%;
 					}
-					.work_skills_container p:last-child{
-						font-size: 0.85rem;
+					.work_skills_container p.skill_names{
+						font-size: 0.9rem;
 					}
 					a.button{
-						margin-top: 5%;
+						margin-top: 4%;
 						padding: 8px 20px; 
 					}
 			}
 	}
-
-/////////////////////////// CONTACT SECTION /////////////////////////
-	form{
-		width: 65%;
+	.work_container .work_image_container{
+		width: 78%;
 	}
-	.contact_container .contact_content{
-		margin-left: 7%;
+	footer{
+		padding:6% 0 7% 0;
+			div.flex_container div.status_container>p.light{
+				width: 65%;
+			}
 	}
 }
-
-
 
 
 @media all and (max-width: 560px){
@@ -115,13 +122,10 @@
 					}
 			}
 	}
-	// .about_image2 img, .about_image1 img{
-	// 	position: static;
-	// 	object-fit:contain;
-	// 	// height:100%;
-	// }
+	.work_container .work_image_container{
+		width: 90%;
+	}
 }
-
 
 
 
@@ -132,7 +136,6 @@
 		font-size: 2.7rem;
 	}
 }
-
 
 
 
