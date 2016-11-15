@@ -1,7 +1,6 @@
 @media all and (max-width: 1000px){
-	h1{
-		font-size: 3rem;
-		padding-top: 40%;
+	header h1{
+		font-size: 3.4rem;
 		width: 75%;
 	}
 }
@@ -12,6 +11,11 @@
 @media all and (max-width: 980px){
 	.about_image2 img, .about_image1 img{
 		position: static;
+		object-fit:cover;
+		height:100%;
+	}
+	header h1{
+		padding-top: 35%;
 	}
 }
 
@@ -26,44 +30,106 @@
 
 
 @media all and (max-width: 768px){
-	h1{
-		padding-top: 47%;
-		font-size: 2.9rem;
-		width: 80%;
+	header h1{
+		padding-top: 40%;
 	}
-	div.wrapper{
-		width: 88.5%;
-	}
-/////////////////////// HAM NAV /////////////////////
-	#ham_nav{
-		display: block;
-		transition: .2s ease-in-out;
-	}
-	// ul.menu-main-nav{
-		
-	// }
-/////////////////////// SEARCH /////////////////////
+}
 
+
+@media all and (max-width: 700px){
+	div.wrapper{
+		width: 87.5%;
+		margin: 0 0 0 2.5%;
+	}
+	header h1{
+		font-size: 3rem;
+		padding-top: 55%;
+		width:95%;
+	}
+	#ham_nav {
+		display: block;
+	}
+	.nav_container{
+		padding:0;
+			ul#menu-main-nav.menu, a p{
+				display: none;
+			}
+	}
+
+///////////////////////// ABOUT SECTION ////////////////////////////
+	div.about_text_container{
+		flex-direction:column;
+		margin:6% 0 7% 0;
+			div.about_text,div.skills_container{
+				width: 100%;
+				padding: 0;
+			}
+			div.skills_container{
+				padding-top: 4%;
+					p{
+						font-size: 0.85rem;
+					}
+			}
+	}
+
+///////////////////////////// WORK SECTION //////////////////////////
+	.work_text_container{
+		flex-direction:column;
+		justify-content:space-between;
+		margin:6% 0 7% 0;
+			.half,.other_half{
+				width: 100%;
+					.work_skills_container .skill_title{
+						padding-top: 3.5%;
+					}
+					.work_skills_container p:last-child{
+						font-size: 0.85rem;
+					}
+					a.button{
+						margin-top: 5%;
+						padding: 8px 20px; 
+					}
+			}
+	}
+
+/////////////////////////// CONTACT SECTION /////////////////////////
+	form{
+		width: 65%;
+	}
+	.contact_container .contact_content{
+		margin-left: 7%;
+	}
 }
 
 
 
 
 @media all and (max-width: 560px){
-	h1{
-		padding-top: 52%;
-		font-size: 2.75rem;
+	.about_image_container.flex_container{
+		height: auto;
+			.about_image1,.about_image2{
+				height:75%;
+					img{
+						position: static;
+						object-fit:contain;
+					}
+			}
 	}
+	// .about_image2 img, .about_image1 img{
+	// 	position: static;
+	// 	object-fit:contain;
+	// 	// height:100%;
+	// }
 }
 
 
 
 
-@media all and (max-width: 480px){
-	h1{
-		padding-top: 82%;
-		width: 91%;
-		font-size: 2.4rem;
+@media all and (max-width: 490px){
+	header h1{
+		padding-top: 65%;
+		width: 100%;
+		font-size: 2.7rem;
 	}
 }
 
@@ -73,4 +139,3 @@
 @media all and (max-width: 320px){
 
 }
-

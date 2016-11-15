@@ -1,18 +1,18 @@
 header{
-	width: 100%;
-}
-h1{
-	padding-top: 26%;
-	width: 60%;
+	// width: 100%;
 	height: 100vh;
-	transition: .4s all ease;
+		h1{
+		padding-top: 26%;
+		width: 60%;
+		transition: .4s all ease;
+	}
 }
 .nav_container{
 	width: 100%;
 	padding: 0 5%;
 	z-index: 1000;
 	position: fixed;
-	background-color: rgba(250,250,250,0.7);
+	background-color: rgba(250,250,250,0.8);
 }
 nav{
 	display: block;
@@ -27,13 +27,16 @@ nav{
 			align-items:center;
 				li{
 					cursor: pointer;
+					margin-left: 20px;
+				}
+				li:first-child{
+					margin-left:0;
 				}
 				li>a{
 					padding: 6px 13px;
-					margin-left: 20px;
 					border: 1px solid transparent;
 					border-radius: 1px;
-					font-size: 1.1rem;
+					font-size: 1rem;
 					transition: 0.2s ease-in-out;
 						&:hover,&:focus{
 							border-color:black;
@@ -41,7 +44,7 @@ nav{
 				}
 		}
 		a p{
-			font-size: 1.125rem;
+			font-size: 1rem;
 			transition: 0.2s all ease;
 				&:focus,&:hover{
 				color: black;
@@ -53,7 +56,7 @@ nav.large{
 	height:100px;
 }
 nav.small{
-	height:38px;
+	height:45px;
 }
 
 ///////////////HAMBURGER NAV///////////////
@@ -62,14 +65,11 @@ nav.small{
 	display: none;
 	cursor:pointer;
 	transform:rotate(450deg);
-	right: -5.5%;
-	top: 35px;
-	font-size: 0.9rem;
-	letter-spacing: 1px;
+	right: -0.6%;
+	letter-spacing: 1.25px;
 	z-index: 1000;
 		&:hover,&:focus{
 			color: black;
 			text-decoration: line-through;
 		}
 }
-

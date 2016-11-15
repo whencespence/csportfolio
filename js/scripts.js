@@ -11,7 +11,6 @@ $(function(){
 		} else {
 			$("nav").removeClass("small").addClass("large");
 		}
-		
 	});
 
 	//scatter h1 on hover

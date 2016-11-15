@@ -27,7 +27,6 @@ section #work{
 }
 .work_container:nth-child(2) .work_inner_container{
 	background-color: rgba(244,188,22,0.12);
-	margin:3.5% 0 5% 0;
 }
 .work_container:nth-child(3) .work_inner_container{
 	background-color: rgba(158,158,158,0.5);
@@ -36,7 +35,7 @@ section #work{
 .work_text_container{
 	flex:1;
 	justify-content:space-between;
-	margin:3.5% 0 5% 0;
+	margin:3.5% 0 5.5% 0;
 		.half,.other_half{
 			width: 48.5%;
 		}
