@@ -6,13 +6,24 @@
 	}
 }
 
-@media all and (max-width: 980px){
 
+
+
+@media all and (max-width: 980px){
+	.about_image2 img, .about_image1 img{
+		position: static;
+	}
 }
+
+
+
 
 @media all and (max-width: 850px){
 
 }
+
+
+
 
 @media all and (max-width: 768px){
 	h1{
@@ -20,15 +31,44 @@
 		font-size: 2.9rem;
 		width: 80%;
 	}
+	div.wrapper{
+		width: 88.5%;
+	}
+/////////////////////// HAM NAV /////////////////////
+	#ham_nav{
+		display: block;
+		transition: .2s ease-in-out;
+	}
+	// ul.menu-main-nav{
+		
+	// }
+/////////////////////// SEARCH /////////////////////
+
 }
+
+
+
+
+@media all and (max-width: 560px){
+	h1{
+		padding-top: 52%;
+		font-size: 2.75rem;
+	}
+}
+
+
+
 
 @media all and (max-width: 480px){
 	h1{
-		padding-top: 87%;
-		width: 90%;
+		padding-top: 82%;
+		width: 91%;
 		font-size: 2.4rem;
 	}
 }
+
+
+
 
 @media all and (max-width: 320px){
 

@@ -6,24 +6,24 @@
 }
 .about_image1{
 	width: 48.5%;
-	overflow: hidden;
-	position: relative;
+	transition: 0.3s all ease;
 		img{
-			position: absolute;
-			top: -76px;
+			position: relative;
+			top: -75px;
+			width: 100%;
 		}
 }
 .about_image2{
 	width: 48.5%;
-	position: relative;
-	overflow: hidden;
+	transition: 0.3s all ease;
 		img{
-			position: absolute;
-			top: -95px;
+			position: relative;
+			top: -98px;
+			width: 100%;
 		}
 }
 .about_text_container{
-	margin:4% 0 5% 0;
+	margin:3.5% 0 5% 0;
 	justify-content:space-between;
 	flex: 1;
 	width: 100%;
@@ -35,16 +35,6 @@
 			width: 48.5%;
 		}
 }
-// div.skills_container{
-// 	flex:1;
-// 	width: 48.5%;
-// 	justify-content:space-between;
-// 		div.skills.flex_container{
-// 			width: 48.5%;
-// 			flex-direction: column;
-// 			flex-wrap:wrap;
-// 		}
-// }
 .tools_container{
 	margin-left: 25%;
 }

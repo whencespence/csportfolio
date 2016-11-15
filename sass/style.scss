@@ -29,6 +29,8 @@ img {
 body {
 	max-width: 1280px;
 	width: 100%;
+	margin: 0 auto;
+	font-size: 15px;
 	background-color: #FAFAFA;
 	font-family: 'roboto', 'helvetica', sans-serif;
 }
@@ -41,7 +43,21 @@ body {
 	display: flex;
 }
 
-// SEARCH.PHP & SEARCHBOX///////////////
+///////////////// SEARCH.PHP /////////////////
+
+// .error{
+// 	height: auto;
+// 	width: 100%;
+// 		p.error{
+// 			margin-top: 15%;
+// 			font-size: 3.6rem;
+// 			font-weight: 700;
+// 			color:black;
+// 			line-height: 1.25;
+// 			margin:2% 0 5% 0;
+// 		}
+// }
+
 .searchbox{
 	margin: 1% 0 5% 0;
 		input[type=search]{

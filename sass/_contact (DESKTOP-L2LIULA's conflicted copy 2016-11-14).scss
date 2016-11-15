@@ -9,22 +9,20 @@
 	line-height: 1.25;
 	margin:2% 0 5% 0;
 }
-.form{
-	width:70%;
+.contact_container{
+	// justify-content:space-between;
 }
 #wpcf7-f49-p4-o1{
 	display: flex;
-	justify-content:space-between;
+	// justify-content:space-between;
+	width: 70%;
 		span{
 			display: inline;
 			width: 100%;
 		}
 		input[type=name],input[type=email]{
-			width: 47%;
+			width: 48%;
 			float:right;
-		}
-		input[name="subject"]{
-			width: 100%;
 		}
 		input,textarea{
 			border: 1px solid black;
@@ -59,23 +57,20 @@
 			height: 130px;
 			margin-bottom: 0%;
 		}
-
-}
-.contact_container .contact_content{
-	margin-left: 15%;
-	// width: 100%;
-		.fa{
-			font-size: 1rem;
-			margin-right: 15px;
-		}
-		p.contact_icon{
-			font-weight: 300;
-			font-size: 0.9rem;
-			margin-bottom: 3.5%;
-			transition: 0.2s all ease;
-				&:focus,&:hover{
-					color: black;
-					text-decoration: line-through;
+		.contact_content{
+			width: 25%;
+				.fa{
+					font-size: 1rem;
+					margin-right: 15px;
+				}
+				p.contact_icon{
+					font-weight: 300;
+					font-size: 0.9rem;
+					margin-bottom: 3.5%;
+					transition: 0.2s all ease;
+						&:focus,&:hover{
+							color: black;
+							text-decoration: line-through;
+						}
 				}
 		}
-}

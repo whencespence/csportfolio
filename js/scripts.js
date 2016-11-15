@@ -4,7 +4,7 @@ $(function(){
 
 	$('a').smoothScroll();
 
-	//reduce nav height on scroll
+	// reduce nav height on scroll
 	$(document).on("scroll", function() {
 		if($(document).scrollTop()>100) {
 			$("nav").removeClass("large").addClass("small");

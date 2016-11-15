@@ -11,11 +11,10 @@
 
 <body>
 
-  <div class="wrapper main">
+  <div class="main">
 
-    <header>
-      <div class="nav_container">
-        <nav class="large flex_container">
+    <div class="nav_container">
+        <nav class="large flex_container" role="navigation">
           <a href="<?php echo home_url( '/' ); ?>" rel="home">
             <?php the_field('nav_name'); ?>
           </a>
@@ -23,7 +22,12 @@
             'container' => false,
             'theme_location' => 'primary'
           )); ?>
+          <div id="ham_nav">MENU</div>
         </nav>
-      </div>
+    </div>
+
+    <div class="wrapper"> <!-- wrapper begins -->
+    
+    <header>
       <?php the_field('main_header'); ?>
     </header>

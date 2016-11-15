@@ -89,7 +89,7 @@
                   <?php while( have_rows('portfolio_links') ): the_row(); ?>
                     <?php $link_name = get_sub_field('link_name'); ?>
                     <?php $link_url = get_sub_field('link_url'); ?>
-                    <a href="<?php echo $link_url?>" target="_blank" class="button"><?php echo $link_name?></a>
+                    <a href="<?php echo $link_url?>" target="_blank" class="button" role="button"><?php echo $link_name?></a>
                   <?php endwhile; ?>
                 </div>
 
@@ -113,18 +113,20 @@
     <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
     <p class="contact_title"><?php the_field('contact_title'); ?></p>
+
       <div class="contact_container flex_container">
         <?php echo do_shortcode( '[contact-form-7 id="49" title="Contact form 1"]' ); ?>
+        
         <div class="contact_content">
-          <p><?php the_field('skype_title'); ?></p>
-          <p class="light"><?php the_field('skype'); ?></p>
-          <p><?php the_field('email_title'); ?></p>
-          
-          <?php $email_url = get_field('email_url'); ?>
-          <?php $email = get_field('email'); ?>
-          <p class="light"><a href="mailto:<?php echo $email_url?>" target="_blank"><?php echo $email?></a></p>
+          <?php while( have_rows('contact_icons') ): the_row(); ?>
+            <?php $contact_icon = get_sub_field('contact_icon'); ?>
+            <?php $contact_url = get_sub_field('contact_url'); ?>
+            <?php $contact_text = get_sub_field('contact_text'); ?>
+              <p class="contact_icon"><a href="<?php echo $contact_url ?>" target="_blank"><i class="fa <?php echo $contact_icon?>" aria-hidden="true" role="link"></i><?php echo $contact_text?></a></p>
+          <?php endwhile; ?>
 
         </div>
+
       </div>
 
     <?php endwhile; // end the loop?>

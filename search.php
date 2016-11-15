@@ -10,7 +10,7 @@
 
 		<?php else : ?>
 
-			<p>Sorry, nothing matched your search criteria. Try searching with some keywords, or send me an email at hello[at]christinaspencer.ca.</p>
+			<p>Sorry, nothing matched your search criteria. Try searching with some keywords, or send me an email at <a href="mailto:hello@christinaspencer.ca">hello[at]christinaspencer.ca</a>.</p>
 			
 			<?php get_search_form(); ?>
 
