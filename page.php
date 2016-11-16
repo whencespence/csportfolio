@@ -2,6 +2,12 @@
 
   <main>
 
+  <header>
+    <?php the_field('main_header'); ?>
+  </header>
+
+
+
 <!--======== ABOUT SECTION =========-->
   
   <section id="about">

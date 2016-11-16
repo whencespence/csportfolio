@@ -22,7 +22,6 @@
 Default Styli
 ====================================
 */
-
 img{
 	max-width: 100%;
 }
@@ -45,28 +44,24 @@ body {
 }
 
 ///////////////// SEARCH.PHP /////////////////
-// .error{
-// 	height: auto;
-// 	width: 100%;
-// 		p.error{
-// 			margin-top: 15%;
-// 			font-size: 3.6rem;
-// 			font-weight: 700;
-// 			color:black;
-// 			line-height: 1.25;
-// 			margin:2% 0 5% 0;
-// 		}
-// }
 
+
+section p.error{
+	padding-top: 10%;
+	font-size: 3.6rem;
+	font-weight: 700;
+	color:black;
+	line-height: 1.25;
+}
 .searchbox{
-	margin: 1% 0 5% 0;
+	margin: 1% 0;
 		input[type=search]{
 			padding: 6px 16px;
 			display: inline-flex;
 			border: 1px solid black;
 			border-radius: 1px;
-			margin: 2% 0;
-			margin-right: 3%;
+			background-color: transparent;
+			margin-top: 3%;
 			transition: .2s ease-in-out;
 				a{
 					font-size: 0.9rem;
@@ -76,5 +71,20 @@ body {
 						color: white;
 						border-color: black;
 					}
+		}
+		input[type=submit]{
+			padding: 6px 16px;
+			width: auto;
+			border: 1px solid black;
+			border-radius: 1px;
+			transition: .2s ease-in-out;
+			font-size: 0.9rem;
+			background-color:transparent;
+			color: black;
+				&:focus,&:hover{
+					background-color: black;
+					color: white;
+					border-color: black;
+				}
 		}
 }

@@ -23,19 +23,22 @@ section #work{
 		}
 }
 .work_container:nth-child(1) .work_inner_container{
-	background-color: rgba(185,232,190,0.35);
+	background-color: rgba(62,97,124,0.2);
 }
 .work_container:nth-child(2) .work_inner_container{
-	background-color: rgba(244,188,22,0.12);
+	background-color: rgba(185,232,190,0.35);
 }
 .work_container:nth-child(3) .work_inner_container{
-	background-color: rgba(158,158,158,0.5);
+	background-color: rgba(244,188,22,0.12);
 }
+// .work_container:nth-child(3) .work_inner_container{
+// 	background-color: rgba(158,158,158,0.5);
+// }
 
 .work_text_container{
 	flex:1;
 	justify-content:space-between;
-	margin:3.5% 0 5.5% 0;
+	margin:4% 0 6% 0;
 		.half,.other_half{
 			width: 48.5%;
 		}
@@ -62,6 +65,6 @@ section #work{
 							background-color: black;
 							color: white;
 						}
-				}
+			}
 		}
 }

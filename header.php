@@ -32,7 +32,3 @@
     </div>
     
     <div class="wrapper"> <!-- wrapper begins -->
-    
-    <header>
-      <?php the_field('main_header'); ?>
-    </header>

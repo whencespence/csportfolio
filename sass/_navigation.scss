@@ -65,15 +65,15 @@ nav.small{
 	display: none;
 	cursor:pointer;
 	transform:rotate(450deg);
-	// right: -85px;
-	right:-135px;
-	top: 160px;
+	right:-125px;
+	top: 50%;
 	z-index: 2000;
 		li{
 			display: inline-block;
 				a{
 					color: #bbb;
 					margin-right: 18px;
+					font-size: 0.85rem;
 					letter-spacing: 1px;
 					text-transform: uppercase;
 						&:hover,&:focus{
