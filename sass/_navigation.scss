@@ -61,16 +61,25 @@ nav.small{
 
 ////////////////////////SIDE NAV///////////////////////
 .side_nav{
-	position: absolute;
+	position: fixed;
 	display: none;
 	cursor:pointer;
 	transform:rotate(450deg);
-	right: -5px;
-	top: 50px;
-	letter-spacing: 1.25px;
-	z-index: 1000;
-		&:hover,&:focus{
-			color: black;
-			text-decoration: line-through;
+	// right: -85px;
+	right:-135px;
+	top: 160px;
+	z-index: 2000;
+		li{
+			display: inline-block;
+				a{
+					color: #bbb;
+					margin-right: 18px;
+					letter-spacing: 1px;
+					text-transform: uppercase;
+						&:hover,&:focus{
+							color: black;
+							text-decoration: line-through;
+						}
+				}
 		}
 }

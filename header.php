@@ -24,7 +24,13 @@
           )); ?>
         </nav>
     </div>
-
+    <div class="side_nav">
+      <?php wp_nav_menu( array(
+        'container' => false,
+        'theme_location' => 'primary'
+      )); ?>
+    </div>
+    
     <div class="wrapper"> <!-- wrapper begins -->
     
     <header>

@@ -36,28 +36,24 @@
 	}
 	header h1{
 		font-size: 3rem;
-		padding-top: 45%;
+		padding-top: 40%;
 		width:95%;
 	}
 	.side_nav {
 		display: block;
 	}
-	nav.small{
-		display: none
-	}
 	.nav_container{
-		ul#menu-main-nav.menu{
-			display: none;
-		}
+		display: none
 	}
 	div.contact_container{
 		flex-direction:column;
-		// padding: 7% 0;
 			div.contact_content{
 				padding-top: 5%;
 				width: 100%;
 				display: inline-flex;
-				justify-content:space-between;
+					.contact_icon{
+						padding-right: 5%;
+					}
 			}
 	}
 	#contact p.contact_title{
@@ -74,9 +70,16 @@
 				padding: 0;
 			}
 			div.skills_container{
+				width: 100%;
+				justify-content:space-between;
+				flex:1;
 				padding-top: 4%;
-					div.skills p,div.tools p{
-						font-size: 0.9rem;
+					div.tools_container,.skills{
+						width: 48.5%;
+						margin-left:0;
+							p{
+								font-size: 0.9rem;
+							}
 					}
 			}
 	}
@@ -115,8 +118,8 @@
 @media all and (max-width: 560px){
 	header h1{
 		font-size: 3rem;
-		padding-top: 50%;
-		width:80%;
+		padding-top: 55%;
+		width:85%;
 	}
 	.about_image_container.flex_container{
 		height: auto;
@@ -130,13 +133,13 @@
 	}
 	div.about_text_container{
 		flex-direction:column;
-		margin:12% 0 15% 0;
+		margin:9% 0 11% 0;
 	}
 	.work_container .work_image_container{
 		width: 90%;
 	}
 	.work_text_container{
-		margin: 12% 0 15% 0;
+		margin:9% 0 11% 0;
 	}
 	div.about_text_container div.skills_container{
 		padding-top: 10%;
@@ -157,3 +160,70 @@
 		font-size: 2.7rem;
 	}
 }
+
+@media all and (max-width: 360px){
+	.work_container .work_image_container{
+		width: 98%;
+		padding:2% 1%;
+	}
+	header h1{
+		font-size: 2.2rem;
+		width: 95%;
+		padding-top: 80%;
+	}
+	.side_nav{
+		right:-138px;
+	}
+	.copyright{
+		padding-top:7%;
+	}
+}
+
+@media only screen and (min-device-width : 360px) and (max-device-width : 640px){
+	header h1{
+		padding-top: 110%;
+	}
+	#contact p.contact_title{
+		font-size: 2.2rem;
+	}
+}
+
+////////////////////////// IPAD/////////////////////////////
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
+	header h1{
+		padding-top: 80%;
+		width: 80%;
+	}
+	div.about_image_container.flex_container{
+		height: auto;
+	}
+	.about_image1,.about_image2{
+		height: auto;
+			img{
+				object-fit:contain;
+				height: auto;
+			}
+	}
+}
+
+
+////////// IPHONE 6////////////////////////////
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px){
+	header h1{
+		padding-top: 110%;
+		width: 95%;
+		font-size: 2.5rem;
+	}
+	#contact p.contact_title{
+		font-size: 2.5rem;
+	}
+}
+
+
+////////// IPHONE 6 PLUS///////////////////////
+@media only screen and (min-device-width : 414px) and (max-device-width : 736px){
+		header h1{
+			padding-top: 105%;
+		}
+}
+

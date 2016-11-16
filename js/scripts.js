@@ -13,6 +13,10 @@ $(function(){
 		}
 	});
 
+	
+
+
+	
 	//////////////////gulp thing//////////////////
 	gulp.task('bs', function() {
 		browserSync.init({
