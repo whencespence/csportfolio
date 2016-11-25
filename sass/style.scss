@@ -19,7 +19,7 @@
 @import 'media-queries';
 /*
 ====================================
-Default Styli
+Default Styling
 ====================================
 */
 img{
@@ -29,7 +29,7 @@ body {
 	max-width: 1280px;
 	width: 100%;
 	margin: 0 auto;
-	position: relative;
+	// position: relative;
 	font-size: 15px;
 	background-color: #FAFAFA;
 	font-family: 'roboto', 'helvetica', sans-serif;
@@ -41,6 +41,9 @@ body {
 }
 .flex_container{
 	display: flex;
+}
+span{
+	
 }
 
 ///////////////// SEARCH.PHP /////////////////

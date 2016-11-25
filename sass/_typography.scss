@@ -1,11 +1,16 @@
 h1,h2,h3{
 	font-family: 'roboto', sans-serif;
 }
-h1{
-	font-size: 3.6rem;
+h1,h1.scatter{
+	font-size: 4.2vw;
 	font-weight: 700;
 	line-height: 1.25;
 }
+
+h1.scatter{
+	white-space:nowrap;
+}
+
 h2{
 	display: block;
 	position: relative;

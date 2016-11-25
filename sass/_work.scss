@@ -23,17 +23,14 @@ section #work{
 		}
 }
 .work_container:nth-child(1) .work_inner_container{
-	background-color: rgba(62,97,124,0.2);
+	background-color: rgba(62,88,224,0.1);
 }
 .work_container:nth-child(2) .work_inner_container{
-	background-color: rgba(185,232,190,0.35);
+	background-color: rgba(158,158,158,0.4);
 }
 .work_container:nth-child(3) .work_inner_container{
-	background-color: rgba(244,188,22,0.12);
+	background-color: rgba(181,38,56,0.1);
 }
-// .work_container:nth-child(3) .work_inner_container{
-// 	background-color: rgba(158,158,158,0.5);
-// }
 
 .work_text_container{
 	flex:1;

@@ -1,7 +1,9 @@
 @media all and (max-width: 1000px){
-	header h1{
-		font-size: 3.4rem;
-		width: 75%;
+	header{
+		padding-top: 23%;
+			h1,h1.scatter{
+				font-size: 4vw;
+			}
 	}
 	div.contact_container {
 		width: 100%;
@@ -9,32 +11,40 @@
 	}
 }
 
-
 @media all and (max-width: 980px){
 	.about_image2 img, .about_image1 img{
 		position: static;
 		object-fit:cover;
 		height:100%;
 	}
-	header h1{
-		padding-top: 35%;
+	header{
+		padding-top: 30%;
+			h1,h1.scatter{
+				padding-right: 20%;
+				font-size: 5.5vw;
+			}
 	}
 }
 
 @media all and (max-width: 768px){
-	header h1{
-		padding-top: 40%;
+	header {
+		padding-top: 45%;
+			h1,h1.scatter{
+				font-size: 5.2vw;
+			}
 	}
 }
 
 @media all and (max-width: 700px){
 	div.wrapper{
 		width: 87%;
+		margin-left: 3%;
 	}
-	header h1{
-		font-size: 3rem;
+	header {
 		padding-top: 50%;
-		width:95%;
+		h1,h1.scatter{
+			font-size: 6vw;
+		}
 	}
 	.side_nav {
 		display: block;
@@ -57,7 +67,7 @@
 			}
 	}
 	#contact p.contact_title{
-		width: 100%;
+		font-size: 6vw;
 	}
 
 
@@ -84,7 +94,7 @@
 			}
 	}
 
-///////////////////////////// WORK SECTION //////////////////////////
+//////////////////////// WORK SECTION //////////////////////////
 	.work_text_container{
 		flex-direction:column;
 		justify-content:space-between;
@@ -116,10 +126,11 @@
 
 
 @media all and (max-width: 560px){
-	header h1{
-		font-size: 3rem;
-		padding-top: 55%;
-		width:85%;
+	header {
+		padding-top: 60%;
+		h1,h1.scatter{
+			font-size: 6vw;
+		}
 	}
 	.about_image_container.flex_container{
 		height: auto;
@@ -152,38 +163,38 @@
 	}
 }
 
-
-@media all and (max-width: 490px){
-	header h1{
-		padding-top: 70%;
-		width: 99%;
-		font-size: 2.6rem;
-	}
-}
-
-@media all and (max-width: 360px){
-	.work_container .work_image_container{
-		width: 98%;
-		padding:2% 1%;
-	}
-	header h1{
-		font-size: 2.2rem;
-		width: 95%;
-		padding-top: 80%;
+@media all and (max-width: 460px){
+	header {
+		padding-top: 50%;
 	}
 	.side_nav{
 		right:-138px;
+	}
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px){
+	header{
+		padding-top: 85%;
+	}
+	h1,h1.scatter{
+		font-size: 10vw;
+	}
+	#contact p.contact_title{
+		font-size: 10vw;
+	}
+	.work_container .work_image_container{
+		width: 98%;
+		padding:2% 1%;
 	}
 	.copyright{
 		padding-top:7%;
 	}
 }
 
-
 //////////////// NEXUS5S //////////////////
 @media only screen and (min-device-width : 360px) and (max-device-width : 640px){
-	header h1{
-		padding-top: 110%;
+	header {
+		padding-top: 45%;
 	}
 	#contact p.contact_title{
 		font-size: 2.2rem;
@@ -192,9 +203,8 @@
 
 /////////////////// IPAD //////////////////
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
-	header h1{
-		padding-top: 80%;
-		width: 80%;
+	header {
+		padding-top: 70%;
 	}
 	div.about_image_container.flex_container{
 		height: auto;
@@ -211,21 +221,19 @@
 
 /////////////// IPHONE 6/////////////////////
 @media only screen and (min-device-width : 375px) and (max-device-width : 667px){
-	header h1{
-		padding-top: 110%;
-		width: 95%;
-		font-size: 2.5rem;
+	header{
+		padding-top: 85%;
 	}
 	#contact p.contact_title{
-		font-size: 2.5rem;
+		font-size: 10vw;
 	}
 }
 
 
 ///////////////// IPHONE 6 PLUS////////////////
 @media only screen and (min-device-width : 414px) and (max-device-width : 736px){
-		header h1{
-			padding-top: 105%;
-		}
+	header {
+		padding-top: 90%;
+	}
 }
 

@@ -17,9 +17,9 @@
         	elseif($social_media_name == 'codepen') {
         		echo '<li><a href="' . $social_media_url . '" target="_blank" role="link"><i class="fa fa-codepen" aria-hidden="true"></i></a></li>';
         	}
-        	elseif($social_media_name == 'medium') {
-        		echo '<li><a href="' . $social_media_url . '" target="_blank" role="link"><i class="fa fa-medium" aria-hidden="true"></i></a></li>';
-        	}
+        	// elseif($social_media_name == 'medium') {
+        	// 	echo '<li><a href="' . $social_media_url . '" target="_blank" role="link"><i class="fa fa-medium" aria-hidden="true"></i></a></li>';
+        	// }
 
 	endwhile;
 
