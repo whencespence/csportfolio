@@ -6,7 +6,7 @@
 * Author: HackerYou
 * Author URI: http://hackeryou.com
 */
-
+@import 'media-queries';
 @import 'normalize';
 @import 'typography';
 @import 'navigation';
@@ -16,20 +16,16 @@
 @import 'about';
 @import 'work';
 @import 'contact';
-@import 'media-queries';
 /*
 ====================================
 Default Styling
 ====================================
 */
-img{
-	max-width: 100%;
-}
-body {
+
+body{
 	max-width: 1280px;
 	width: 100%;
 	margin: 0 auto;
-	// position: relative;
 	font-size: 15px;
 	background-color: #FAFAFA;
 	font-family: 'roboto', 'helvetica', sans-serif;
@@ -42,12 +38,8 @@ body {
 .flex_container{
 	display: flex;
 }
-span{
-	
-}
 
 ///////////////// SEARCH.PHP /////////////////
-
 
 section p.error{
 	padding-top: 10%;
