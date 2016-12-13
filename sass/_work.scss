@@ -12,18 +12,16 @@ section #work{
 			margin: 0 auto;
 				img{
 					width: 100%;
-					-webkit-box-shadow: 2px 2px 20px 0px rgba(0,0,0,0.5);
-					-moz-box-shadow: 2px 2px 20px 0px rgba(0,0,0,0.5);
-					box-shadow: 2px 2px 20px 0px rgba(0,0,0,0.5);
-					transition: 0.8s opacity;
+					box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+					transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 						&:focus,&:hover{
-							opacity: 0.85;
+							box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 						}
 				}
 		}
 }
 .work_container:nth-child(1) .work_inner_container{
-	background-color: rgba(181,38,56,0.7);
+	background-color: rgba(181,38,56,0.4);
 }
 .work_container:nth-child(2) .work_inner_container{
 	background-color: rgba(158,158,158,0.4);
@@ -31,7 +29,6 @@ section #work{
 .work_container:nth-child(3) .work_inner_container{
 	background-color: rgba(62,88,224,0.1);
 }
-
 .work_text_container{
 	flex:1;
 	justify-content:space-between;
